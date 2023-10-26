@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HomeWorkFirebase</string>
+    <string name="add_note">Add note</string>
+    <string name="enter_a_note">Enter a note</string>
 </resources>

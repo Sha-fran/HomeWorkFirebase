@@ -31,6 +31,7 @@ class SplashScreenFragment : Fragment() {
         val image:ImageView = view.findViewById(R.id.image)
         startAnimation(image)
         val googleSignInOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken("498456460097-a7vscaamqb7c7l35bnqt8pg4akdocit8.apps.googleusercontent.com")
             .requestEmail()
             .build()
 
@@ -40,7 +41,7 @@ class SplashScreenFragment : Fragment() {
         if (account == null) {
             showSignInButton()
         } else {
-            activity.showListFragment()
+            activity.showMapFragment()
         }
 
         signInButton?.setOnClickListener {
